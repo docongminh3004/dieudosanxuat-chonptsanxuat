@@ -1,0 +1,293 @@
+<div class="row" style="padding-top: 21px;margin-left: 10px;">
+
+    <div class="col-md-7">
+        <p style="font-weight: 700;font-size: 25px;">Chọn phương tiện sản xuất</p>
+
+    </div>
+
+    <div style="text-align: right;" class="col-md-2">
+        <button style="background-color: #4074e4;" class="btn btn-primary"><i class="fa fa-plus"></i></button>
+
+    </div>
+    <div class="col-md-2">
+        <button type="button" class="btn btn-primary" style="margin-left: 7px;background-color:#4074e4">
+            <i class="fa fa-plus"></i>Thêm lịch đột xuất
+        </button>
+    </div>
+    <div class="col-md-1">
+        <button style="background-color: #4bb8da;" class="btn btn-primary"><i class="fa fa-list-ol"
+                aria-hidden="true"></i></button>
+        <button style="background-color: #c3cac9;" class="btn btn-primary"><i class="fa fa-calendar"
+                aria-hidden="true"></i></button>
+    </div>
+</div>
+
+
+
+<div class="row" style="padding-top: 21px;margin-left: 10px;">
+
+
+    <div class="col-md-8">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link active" href="#activity" data-toggle="tab">LỊCH XE</a></li>
+            <li class="nav-item"><a class="nav-link" href="#timeline" data-toggle="tab">LỊCH QUAY PHIM</a></li>
+            <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">LỊCH KỸ THUẬT VIÊN</a></li>
+        </ul>
+
+    </div>
+    <div class="col-md-3">
+
+        <button style="background-color: #4074e4 ; " class="btn btn-primary"><i class="fa fa-file-code-o"
+                aria-hidden="true"></i><b style="font-weight: 500;font-size: 16px;">Lưu</b></button>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-1">
+    </div>
+
+    <div class="col-md-2"> Loại lịch
+        <select style="width:100px;" class="form-select" aria-label="Default select example">
+            <option selected>Ngày</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+
+
+    </div>
+
+    <div class="col-md-3">
+        <form action="/demo/action_page.php">
+
+            <input style="Width: 300px;" type="date" name="bday">
+            <!-- <input type="submit" value="Gửi"> -->
+        </form>
+    </div>
+    <div class="col-md-1">
+        <button type="button" style="background-color: blue;color: white;float: right;">Xem lịch</button>
+    </div>
+    <div class="col-md-3">
+        <button class="icon"><i class="fa fa-search"></i></button>
+        <input type="search" id="search" placeholder="Search..." />
+    </div>
+
+
+
+</div>
+<div class="col-md-9">
+    <div class="m-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Tên xe</th>
+      
+
+                    <div class="col-12 md:col-6 drop-column" pDroppable="products" (onDrop)="drop($event)">
+                        <p-table [value]="selectedProducts">
+                            <ng-template pTemplate="header">
+                <tr>
+                    <th> 00:00 - 1</th>
+                    <th>01:00 - 2</th>
+                    <th>02:00 - 3</th>
+                    <th>03:00 - 4</th>
+                    <th>04:00 - 5</th>
+                    <th>05:00 - 6</th>
+                    <th>06:00 - 7</th>
+                    <th>07:00 - 8</th>
+                    <th>08:00 - 9</th>
+                    <th>09:00 - 1</th>
+                    <th>10:00 - 1</th>
+                    <th>12:00 - 1</th>
+                    <th>13:00 - 1</th>
+                    <th>14:00 - 1</th>
+                    <th>15:00 - 1</th>
+                </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-product>
+                    <tr>
+                        <td>{{product.name}}</td>
+                        <td>{{product.giobd}}</td>
+                        <td>{{product.giokt}}</td>
+                        <td>{{product.diachi}}</td>
+                        <td>{{product.tacgia}}</td>
+                    </tr>
+                </ng-template>
+                </p-table>
+    </div>
+
+
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>XE343 - Tuyết Phạm</td>
+        </tr>
+        <tr>
+            <td>Xe 1 - Huy Hùng</td>
+        </tr>
+        <tr>
+            <td>Xe 2 - Phương Đông</td>
+        </tr>
+        <tr>
+            <td>Xe 3 - V/Huỳnh</td>
+        </tr>
+        <tr>
+            <td>Xe 4 - Duy Long</td>
+        </tr>
+        <tr>
+            <td>Xe 5 - V/Tú</td>
+        </tr>
+        <tr>
+            <td>Xe 6 - Ngọc Thạch</td>
+        </tr>
+        <tr>
+            <td>Xe 7 - Châu Minh</td>
+        </tr>
+        <tr>
+            <td>Xe 9 - H/Trung</td>
+        </tr>
+        <tr>
+            <td>Xe 10 - Anh Minh</td>
+        </tr>
+        <tr>
+            <td>Xe 11 - Trần Quỳnh</td>
+        </tr>
+        <tr>
+            <td>Xe 12 - H/Thanh</td>
+        </tr>
+        <tr>
+            <td>Xe 14 - D/Hiếu</td>
+        </tr>
+        <tr>
+            <td>Xe 15 - Đức Vinh</td>
+        </tr>
+
+        <tr>
+            <td>Xe 16 - Binh Điểm</td>
+        </tr>
+
+        <tr>
+            <td>Xe 17 - Đức Dũng</td>
+        </tr>
+
+        <tr>
+            <td>Xe 18 - Đức Hằng</td>
+        </tr>
+
+        <tr>
+            <td>Taxi</td>
+        </tr>
+
+        <tr>
+            <td>Xe VTV4</td>
+        </tr>
+
+        <tr>
+            <td>XCS</td>
+        </tr>
+
+    </tbody>
+    </table>
+</div>
+</div>
+<div class="col-md-3">
+    <!-- ////////////////////////////////////////////////// -->
+    <div class="grid">
+        <div class="col-12 md:col-6 drag-column">
+            <div *ngFor="let product of availableProducts">
+
+
+                <div class="product-item" pDraggable="products" (onDragStart)="dragStart($event,product)"
+                    (onDragEnd)="dragEnd($event)">
+
+                     <div style="background-color: darkgrey;">
+                        <h4 style="text-transform: uppercase;margin-left: 50px;padding: 5px;">PHÒNG TỔ CHỨC HÀNH CHÍNH <button
+                                style="background-color: #1b58db " class="btn btn-primary"><i class="fa fa-dot-circle-o"
+                                    aria-hidden="true"></i></button>
+                        </h4>
+                    </div> 
+                    <div style="background-color: rgb(41, 182, 116);" class="product-list-detail">
+                        <h5 class="mb-2"><i>{{product.name}}</i></h5>
+                        <h6 class="mb-0">{{product.giokt}}
+                            <i class="pi pi-tag product-giobd-icon"></i>
+                            <span class="product-giobd">{{product.giobd}}</span>
+                            <span class="mb-0">|{{product.diachi}}</span>
+                            <span class="mb-2">|{{product.tacgia}}</span>
+                        </h6>
+
+
+                    </div>
+
+                    <!-- <div style="background-color: rgb(17, 202, 162);" class="product-list-action">
+                     
+                        <span
+                            class="'product-badge status-'{{product.inventoryStatus}}">{{product.inventoryStatus}}</span> 
+                    </div>
+
+                    <div style="background-color: rgb(201, 202, 204);" class="product-list-action">
+                       
+                       
+                    </div>
+
+                    <div style="background-color: rgb(192, 218, 102);" class="product-list-action">
+                        
+                
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+        <!-- ///////////////////////////////////////////// -->
+        <!-- <div class="">
+            <div style="background-color: darkgrey;">
+                <h4 style="text-transform: uppercase;margin-left: 50px;padding: 5px;">PHÒNG TỔ CHỨC HÀNH CHÍNH <button
+                        style="background-color: #1b58db " class="btn btn-primary"><i class="fa fa-dot-circle-o"
+                            aria-hidden="true"></i></button>
+                </h4>
+            </div>
+            <div style="background-color: rgb(41, 182, 116);">
+                <i>Việt nam hôm nay</i>
+                <p style="font-size: 12px;">13/1 8h30 - 13/1 18:0|Hà Nội| Quỳnh Hoa</p>
+
+            </div>
+
+            <div class="">
+                <div style="background-color: darkgrey;">
+                    <h4 style="text-transform: uppercase;margin-left: 50px;padding: 5px;">PHÒNG CHÍNH TRỊ <button
+                            style="background-color: #1b58db " class="btn btn-primary"><i class="fa fa-dot-circle-o"
+                                aria-hidden="true"></i></button>
+                    </h4>
+                </div>
+                <div style="background-color: rgb(49, 137, 196);">
+                    <i>Lịch đột xuất</i>
+                    <p style="font-size: 12px;">11/1 8h30 - 15/1 18:0|Hà Nội| Trangntt</p>
+                    <div style="background-color: rgb(41, 182, 116);">
+                        <i>Chuyên mục ngày tết</i>
+                        <p style="font-size: 12px;">13/1 8h30 - 13/1 18:0|Hà Nam| Trangntt</p>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div style="background-color: darkgrey;">
+                        <h4 style="text-transform: uppercase;margin-left: 50px;padding: 5px;">PHÒNG CHÀO BUỔI SÁNG
+                            <button style="background-color: #1b58db " class="btn btn-primary"><i
+                                    class="fa fa-dot-circle-o" aria-hidden="true"></i></button>
+                        </h4>
+                    </div>
+                    <div style="background-color: rgb(41, 182, 116);">
+                        <i>Đăng ký lịch đột xuất</i>
+                        <p style="font-size: 12px;">13/1 8h30 - 13/1 18:0|Đà nẵng| Lê Dũng</p>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+
+            <!-- ////////////////////////////////////////////////// -->
+
+            <!-- <div class="image-container">
+                        <img src="assets/showcase/images/demo/product/{{product.image}}" [alt]="product.name" class="product-image" />
+                </div> -->

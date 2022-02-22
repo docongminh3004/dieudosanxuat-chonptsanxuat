@@ -1,0 +1,411 @@
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+
+    <a style="background-color: #000094" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <!-- <span class="logo-mini"><b>A</b>LT</span> -->
+      <!-- logo for regular state and mobile devices -->
+      <a style="color: white; margin-top: -15px;margin-left: -14px;" href="#" class="sidebar-toggle"
+        data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <img style="width: 52%;margin-top: -4px;margin-left: -23px;" src="/assets/icon/vtvnx.png" width="" height="">
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" style="
+               box-shadow: 0 6px 6px -9px #0043ff; 
+               background-color: #f5f5f5;
+               ">
+      <!-- Sidebar toggle button-->
+      <!-- <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+              <span class="sr-only">Toggle navigation</span>
+            </a> -->
+<div class="row">
+
+  <div class="col-md-8">
+      <select style="width:100px;height:30px ;border-radius:20px;" class="form-select"
+        aria-label="Default select example">
+        <option selected>Ban Thời Sự</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+
+    </div>
+    <div class="col-md-1">
+      <div> <h5 type="button" style="color: rgb(47, 169, 218);">Trang thông tin</h5> </div> 
+    </div>
+
+    <div class="col-md-0">
+
+      <div class="navbar-custom-menu">
+
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i style="color: #7ab9ef;" class="fa fa-bell-o"></i>
+              <!-- <span class="label label-success">4</span> -->
+            </a>
+          </li>
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i style="color: #7ab9ef;" class="fa fa-calendar" aria-hidden="true"></i>
+              <!-- <span class="label label-warning">10</span> -->
+            </a>
+          </li>
+          <!-- Tasks: style can be found in dropdown.less -->
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i style="color: #7ab9ef;" class="fa fa-pencil" aria-hidden="true"></i>
+              <!-- <span class="label label-danger">9</span> -->
+            </a>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="">
+              <span style="color: black;" class="hidden-xs">Đỗ Công Minh<br></span>
+            </a>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+        </ul>
+      </div>
+
+      </div>
+    </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar" style="background-color: #0c469f">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+
+      <!-- search form -->
+
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="nav-item">
+          <a style="color:#eee" [routerLink]="['/home']" routerLinkActive="router-link-active" class="fa fa-home"> Trang chủ</a>
+        </li>
+        <!-- <li class="nav-item"><a style="color:#eee" href="https://adminlte.io/docs"><i class="fa fa-home"></i>
+            <span>Trang chủ</span></a></li> -->
+        <li class="treeview">
+          <a style="color:#eee" href="#">
+            <i class="fa fa-calendar-o"></i>
+            <span>Quản lý kế hoạch</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+           
+          </ul>
+        </li>
+        <li class="treeview">
+          <a style="color:#eee" href="#">
+            <i class="fa  fa-calendar"></i>
+            <span>Quản lý sản xuất</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="nav-item d-none d-sm-inline-block">
+              <a [routerLink]="['/sanxuat']" routerLinkActive="router-link-active" class="fa fa-circle-o"> Chọn phương tiện sản xuất</a>
+            </li>
+         
+          </ul>
+        </li>
+        <li class="treeview">
+          <a style="color:#eee" href="#">
+            <i class="fa fa-calendar-minus-o"></i>
+            <span>Phân công lao động</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+         
+          </ul>
+        </li>
+        <li class="treeview">
+          <a style="color:#eee" href="#">
+            <i class="fa fa-list-alt"></i>
+            <span>Quản lý vỏ bản tin/chương trình</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+       
+          </ul>
+        </li>
+        <li class="treeview">
+          <a style="color:#eee" href="#">
+            <i class="fa fa-align-justify"></i>
+            <span>Đánh giá lao động</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+ 
+          </ul>
+        </li>
+        <li class="treeview">
+          <a style="color:#eee" href="#">
+            <i class="fa  fa-dollar (alias)"></i>
+            <span>Quản lý lương sản xuất</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+  
+          </ul>
+        </li>
+        <li class="treeview">
+          <a style="color:#eee" href="#">
+            <i class="fa  fa-bar-chart"></i>
+            <span>Thống kê-Báo cáo</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+        
+          </ul>
+        </li>
+        <li class="treeview">
+          <a style="color:#eee" href="#">
+            <i class="fa fa-list"></i>
+            <span>Quản lý danh mục hệ thống</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-left"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+       
+          </ul>
+        </li>
+        <li><a style="color:#eee" href="https://adminlte.io/docs"><i class="fa fa-desktop"></i> <span>Quản trị trang
+              thông tin</span></a></li>
+        <!-- <li class="header">LABELS</li>
+              <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+              <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+              <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li> -->
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- /.content-wrapper -->
+  <footer style="background-color: #f5f5f5;height: 20px;" class="main-footer">
+    <p style="color: rgb(15, 14, 14); text-align: center;margin-top: -10px;">@2018 Đài Truyền Hình Việt Nam</p>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark" style="display: none;">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">Recent Activity</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                <p>Will be 23 on April 24th</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-user bg-yellow"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+
+                <p>New phone +1(800)555-1234</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+
+                <p>nora@example.com</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+
+                <p>Execution time 5 seconds</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+        <h3 class="control-sidebar-heading">Tasks Progress</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Custom Template Design
+                <span class="label label-danger pull-right">70%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Update Resume
+                <span class="label label-success pull-right">95%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Laravel Integration
+                <span class="label label-warning pull-right">50%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                Back End Framework
+                <span class="label label-primary pull-right">68%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Stats tab content -->
+      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+        <form method="post">
+          <h3 class="control-sidebar-heading">General Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Report panel usage
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Some information about this general settings option
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Allow mail redirect
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Other sets of options are available
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Expose author name in posts
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Allow the user to show his name in blog posts
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <h3 class="control-sidebar-heading">Chat Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Show me as online
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Turn off notifications
+              <input type="checkbox" class="pull-right">
+            </label>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Delete chat history
+              <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+            </label>
+          </div>
+          <!-- /.form-group -->
+        </form>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+             immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->

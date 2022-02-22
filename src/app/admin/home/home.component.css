@@ -1,0 +1,107 @@
+/*Code phần table*/
+.m-table {
+    height: 535px;
+    overflow: scroll;
+    scrollbar-width: thin;
+  }
+  /*
+  custom scollbar
+  */
+  .m-table::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+    background: rgb(156, 155, 155);
+  }
+  .m-table::-webkit-scrollbar-thumb {
+    background: #494848;
+  }
+  
+  table th {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: #fff;
+    
+    /* text-transform: uppercase; */
+    /* height: 70px; */
+  }
+  table th,
+  td {
+    border-bottom: 1px solid rgb(199 199 199);
+    padding: 5px 10px;
+    text-align: left;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  table th {
+    background-color: rgb(237, 238, 242);
+    border-left: 1px solid rgb(196, 196, 196);
+    border-right: 1px solid rgb(196, 196, 196);
+  }
+  table tr {
+    position: relative;
+  }
+  table td {
+    border-left: 1px dashed rgb(196, 196, 196);
+  }
+  table td:nth-child(1),
+  table td:nth-child(2),
+  table th:nth-child(1),
+  table th:nth-child(2) {
+    border-left: unset !important;
+  }
+  table th:nth-child(1) {
+    border-right: 1px solid rgb(196, 196, 196) !important;
+  }
+  
+  .m-handle {
+    color: rgb(46, 123, 179);
+  }
+  
+  /* Position sticky */
+  /* table thead th:first-child,
+  table thead th:last-child {
+    z-index: 10;
+  }
+  
+  table tr td:first-child,
+  table thead tr th:first-child {
+    background-color: white;
+    position: sticky;
+    left: 0;
+    border-right: 1px dashed rgb(196, 196, 196);
+  }
+  
+  table tr td:last-child,
+  table thead tr th:last-child {
+    background-color: white;
+    position: sticky;
+    right: 0;
+  }
+  table thead tr th:first-child,
+  table thead tr th:last-child {
+    background-color: rgb(237, 238, 242) !important;
+  } */
+  table tr td:first-child,
+  table thead tr th:first-child {
+    border-right: 1px dashed rgb(196, 196, 196);
+  }
+  
+  /* table.m-table tr input[type="checkbox"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px;
+    border-spacing: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  } */
+  
